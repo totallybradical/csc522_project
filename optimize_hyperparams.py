@@ -117,15 +117,15 @@ model = KerasClassifier(build_fn=create_model, verbose=20)
 
 print()
 
-# batch_size = list(range(24, 288, 24))
-batch_size = 248
-# epochs = list(range(25, 525, 25))
-epochs = 475
+batch_size = list(range(24, 288, 24))
+# batch_size = 248
+epochs = list(range(50, 525, 50))
+# epochs = 475
 # param_grid = dict(batch_size=batch_size, epochs=epochs)
 
 ### Learning Rate ###
-lr = [0.001, 0.005, 0.01, 0.05, 0.1, 0.2, 0.3]
-param_grid = dict(lr=lr)
+lr = [0.001, 0.005, 0.01, 0.1]
+param_grid = dict(lr=lr, batch_size=batch_size, epochs=epochs)
 
 num_folds = 10
 grid = GridSearchCV(estimator=model, param_grid=param_grid, n_jobs=-1, cv=num_folds)
