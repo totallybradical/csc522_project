@@ -5,7 +5,7 @@
 ##### 
 
 ########
-# SPLIT
+# SEED
 ########
 
 # Seed for consistent output
@@ -123,8 +123,10 @@ epochs = 300
 ### Learning Rate ###
 # lr = [0.001, 0.005, 0.01]
 lr = [0.001]
-dr = [0.0, 0.1, 0.2]
-hn = [1, 5, 10, 15, 20, 25, 30]
+# dr = [0.0, 0.1, 0.2]
+dr = 0.1
+# hn = [1, 5, 10, 15, 20, 25, 30]
+hn = 20
 
 model = KerasClassifier(build_fn=create_model, verbose=20, batch_size=batch_size, epochs=epochs)
 
