@@ -7,3 +7,14 @@ Our main objective for our experiment was to explore the use of a Convolutional 
 ## SNN
 
 Given our inexperience with applied neural networks, we decided to also see how efficient a standard neural network might be in classifying the images. The design, implementation, and optimization of the SNN was done using the Keras library within Python.
+
+---
+
+See our final report for an in-depth explanation and analysis of our experiment.
+
+---
+
+### Authors:
+* Ilya Arakelyan (iarakel@ncsu.edu)
+* Erika Eill (iarakel@ncsu.edu)
+* Bradford Ingersoll (bingers@ncsu.edu)
